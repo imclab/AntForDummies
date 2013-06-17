@@ -15,17 +15,17 @@ A buildFile contains one _Project and at least one _Target for the _Project.
 _Targets are sets of tasks to execute. A _Project might have a _Target for compiling and a _Target for making a redistributable. _Targets may depend on other _Targets.
 A _Task is code that can be executed. Ant includes a set of [built-in _Tasks](http://ant.apache.org/manual/tasklist.html).
 
-### _Projects
+### Projects
 A _Project has three attributes:
 * name: (optional)
 * default: the default _Target to use when none is supplied (optional)
 * basedir: the base directory from which all paths are constructed (optional)
 
-### _Targets
+### Targets
 A _Target can have the following attributes:
 *
 
-### _Tasks
+### Tasks
 The basic structure for _Tasks is:
 	<taskname attribute1="value1" attribute2="value2" .../>
 
