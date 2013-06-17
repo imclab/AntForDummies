@@ -11,31 +11,31 @@ Differences:
 To install, see _Installing Apache Ant_ at http://ant.apache.org/manual/index.html
 
 ## Writing a BuildFile
-A buildFile contains one _Project and at least one _Target for the _Project.
-_Targets are sets of tasks to execute. A _Project might have a _Target for compiling and a _Target for making a redistributable. _Targets may depend on other _Targets.
-A _Task is code that can be executed. Ant includes a set of [built-in _Tasks](http://ant.apache.org/manual/tasklist.html).
+A buildFile contains one __Project__ and at least one __Target__ for the __Project__.
+__Targets__ are sets of tasks to execute. A __Project__ might have a __Target__ for compiling and a __Target__ for making a redistributable. _Targets may depend on other _Targets.
+A __Task__ is code that can be executed. Ant includes a set of [built-in _Tasks](http://ant.apache.org/manual/tasklist.html).
 
 ### Projects
-A _Project has three attributes:
+A __Project__ has three attributes:
 * name: (optional)
-* default: the default _Target to use when none is supplied (optional)
+* default: the default __Target__ to use when none is supplied (optional)
 * basedir: the base directory from which all paths are constructed (optional)
 
 ### Targets
-A _Target can have the following attributes:
+A __Target__ can have the following attributes:
 *
 
 ### Tasks
-The basic structure for _Tasks is:
+The basic structure for __Tasks__ is:
 	<taskname attribute1="value1" attribute2="value2" .../>
 
-A _Task can have the following attributes:
+A __Task__ can have the following attributes:
 * name: a name used in log messages
-* id: a unique ID for the _Task. References to this _Task should use this ID.
+* id: a unique ID for the __Task__. References to this __Task__ should use this ID.
 
 #### Properties
-_Properties may be set in a buildFile or outside of Ant. A _Property has a case-sensitive name and a value. 
-_Properties may be used as the value of _Task attributes by using `attribute="${property}"`.
+__Properties__ay be set in a buildFile or outside of Ant. A __Property__ has a case-sensitive name and a value. 
+__Properties__ may be used as the value of __Task__ attributes by using `attribute="${property}"`.
 
 #### An Example BuildFile
 
