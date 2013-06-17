@@ -33,7 +33,7 @@ A _Task can have the following attributes:
 * name: a name used in log messages
 * id: a unique ID for the _Task. References to this _Task should use this ID.
 
-#### _Properties
+#### Properties
 _Properties may be set in a buildFile or outside of Ant. A _Property has a case-sensitive name and a value. 
 _Properties may be used as the value of _Task attributes by using `attribute="${property}"`.
 
